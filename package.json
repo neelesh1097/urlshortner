@@ -1,0 +1,10 @@
+{
+  "name": "snapurl-fullstack",
+  "version": "1.0.0",
+  "description": "Production Fullstack URL Shortener & Master Revision Guide",
+  "scripts": {
+    "dev:backend": "cd Backend && npm run dev",
+    "dev:frontend": "cd Frontend && npm run dev",
+    "install:all": "npm --prefix Backend install && npm --prefix Frontend install"
+  }
+}

@@ -1,4 +1,5 @@
-const BASE_URL = "/api";
+const rawBaseUrl = import.meta.env.VITE_API_BASE_URL || "/api";
+const BASE_URL = rawBaseUrl.endsWith("/") ? rawBaseUrl.slice(0, -1) : rawBaseUrl;
 
 async function request(endpoint, options = {}) {
   const config = {
